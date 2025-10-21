@@ -1,0 +1,19 @@
+{
+  "showUnsupportedFiles": true,
+  "promptDelete": true,
+  "useMarkdownLinks": true,
+  "alwaysUpdateLinks": true,
+  "readableLineLength": false,
+  "defaultViewMode": "preview",
+  "foldHeading": true,
+  "showLineNumber": false,
+  "tabSize": 5,
+  "foldIndent": true,
+  "attachmentFolderPath": "./!!AnyRouter.Top MasterFile.md_Attachments",
+  "userIgnoreFilters": [
+    "Z_OBS_Sidebar_Dialg/",
+    "Clippings/",
+    "Z_OBS_Sidebar_Dialg/OLD/"
+  ],
+  "showIndentGuide": false
+}

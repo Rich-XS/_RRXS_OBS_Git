@@ -1,0 +1,199 @@
+2025-10-12 02:01:26,795 - DEBUG - Using proactor: IocpProactor
+2025-10-12 02:01:26,798 - INFO - [95m================================================================================[0m
+2025-10-12 02:01:26,798 - INFO - [95mAnyRouter 本地完整版启动 - 共 3 个账号[0m
+2025-10-12 02:01:26,798 - INFO - [95m================================================================================[0m
+2025-10-12 02:01:26,799 - INFO - [94m开始处理账号: rrxsUK (123463452)[0m
+2025-10-12 02:01:37,388 - ERROR - [rrxsUK] 处理失败: BrowserType.launch: Executable doesn't exist at C:\Users\rrxs\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-10-12 02:01:37,408 - INFO - 等待 2 秒后处理下一个账号...
+2025-10-12 02:01:39,418 - INFO - [94m开始处理账号: RichardXieSong (RichardX)[0m
+2025-10-12 02:01:40,206 - ERROR - [RichardXieSong] 处理失败: BrowserType.launch: Executable doesn't exist at C:\Users\rrxs\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-10-12 02:01:40,228 - INFO - 等待 2 秒后处理下一个账号...
+2025-10-12 02:01:42,231 - INFO - [94m开始处理账号: rrxsJP (5757344544)[0m
+2025-10-12 02:01:43,026 - ERROR - [rrxsJP] 处理失败: BrowserType.launch: Executable doesn't exist at C:\Users\rrxs\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-10-12 02:01:43,047 - INFO - [95m================================================================================[0m
+2025-10-12 02:01:43,047 - INFO - [95m任务执行完成 - 结果汇总:[0m
+2025-10-12 02:01:43,048 - INFO - [95m================================================================================[0m
+2025-10-12 02:01:43,048 - INFO - rrxsUK (123463452): ❌ 失败
+2025-10-12 02:01:43,048 - INFO - RichardXieSong (RichardX): ❌ 失败
+2025-10-12 02:01:43,048 - INFO - rrxsJP (5757344544): ❌ 失败
+2025-10-12 02:01:43,049 - INFO - [95m================================================================================[0m
+2025-10-12 02:01:43,049 - INFO - [95m总计: 0/3 个账号刷新成功[0m
+2025-10-12 02:01:43,049 - INFO - [95m================================================================================[0m
+2025-10-12 02:01:43,049 - INFO - [95m================================================================================[0m
+2025-10-12 02:01:43,050 - INFO - [95m💰 AnyRouter 账号余额和使用量报告[0m
+2025-10-12 02:01:43,050 - INFO - [95m报告时间: 2025-10-12 02:01:43[0m
+2025-10-12 02:01:43,050 - INFO - [95m================================================================================[0m
+2025-10-12 02:01:43,050 - INFO - [96mrrxsUK: 无今日数据[0m
+2025-10-12 02:01:43,051 - INFO - [96mRichardXieSong: 无今日数据[0m
+2025-10-12 02:01:43,051 - INFO - [96mrrxsJP: 无今日数据[0m
+2025-10-12 02:01:43,051 - INFO - [95m💰 总余额: $0.00[0m
+2025-10-12 02:01:43,051 - INFO - [95m
+📈 7日余额趋势:[0m
+2025-10-12 02:01:43,052 - INFO - [95m================================================================================[0m
+2025-10-12 02:02:50,187 - DEBUG - Using proactor: IocpProactor
+2025-10-12 02:02:50,190 - INFO - [95m================================================================================[0m
+2025-10-12 02:02:50,191 - INFO - [95mAnyRouter 余额检查模式[0m
+2025-10-12 02:02:50,192 - INFO - [95m================================================================================[0m
+2025-10-12 02:02:52,541 - ERROR - [rrxsUK] 检查失败: BrowserType.launch: Executable doesn't exist at C:\Users\rrxs\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-10-12 02:02:55,092 - ERROR - [RichardXieSong] 检查失败: BrowserType.launch: Executable doesn't exist at C:\Users\rrxs\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-10-12 02:02:57,625 - ERROR - [rrxsJP] 检查失败: BrowserType.launch: Executable doesn't exist at C:\Users\rrxs\AppData\Local\ms-playwright\chromium-1187\chrome-win\chrome.exe
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2025-10-12 02:02:57,677 - INFO - [95m
+💰 总余额: $0.00[0m
+2025-10-12 02:02:57,678 - INFO - [95m✅ 成功检查: 0/3 个账号[0m
+2025-10-12 02:04:58,191 - DEBUG - Using proactor: IocpProactor
+2025-10-12 02:04:58,192 - INFO - [95m================================================================================[0m
+2025-10-12 02:04:58,192 - INFO - [95mAnyRouter 本地完整版启动 - 共 3 个账号[0m
+2025-10-12 02:04:58,192 - INFO - [95m================================================================================[0m
+2025-10-12 02:04:58,193 - INFO - [94m开始处理账号: rrxsUK (123463452)[0m
+2025-10-12 02:04:59,955 - INFO - [rrxsUK] 浏览器初始化成功
+2025-10-12 02:04:59,964 - INFO - [rrxsUK] 开始访问: https://anyrouter.top/console
+2025-10-12 02:05:44,095 - INFO - [rrxsUK] 开始提取使用量信息...
+2025-10-12 02:05:47,112 - WARNING - [93m[rrxsUK] ⚠️  未能自动检测到余额信息[0m
+2025-10-12 02:06:02,582 - ERROR - [rrxsUK] 未找到用户名输入框
+2025-10-12 02:06:03,276 - ERROR - Future exception was never retrieved
+future: <Future finished exception=TargetClosedError('Target page, context or browser has been closed\nCall log:\n  - waiting for locator("#username") to be visible\n')>
+playwright._impl._errors.TargetClosedError: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("#username") to be visible
+
+2025-10-12 02:07:00,318 - DEBUG - Using proactor: IocpProactor
+2025-10-12 02:07:00,320 - INFO - [95m================================================================================[0m
+2025-10-12 02:07:00,321 - INFO - [95mAnyRouter 余额检查模式[0m
+2025-10-12 02:07:00,322 - INFO - [95m================================================================================[0m
+2025-10-12 02:07:04,381 - INFO - [rrxsUK] 浏览器初始化成功
+2025-10-12 02:08:30,634 - ERROR - [rrxsUK] 检查失败: ElementHandle.click: Timeout 30000ms exceeded.
+Call log:
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div role="none" class="semi-modal-wrap">…</div> from <div class="semi-portal">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div role="none" class="semi-modal-wrap">…</div> from <div class="semi-portal">…</div> subtree intercepts pointer events
+  2 × retrying click action
+      - waiting 100ms
+      - waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <p>…</p> from <div class="semi-portal">…</div> subtree intercepts pointer events
+  49 × retrying click action
+       - waiting 500ms
+       - waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <p>…</p> from <div class="semi-portal">…</div> subtree intercepts pointer events
+  - retrying click action
+    - waiting 500ms
+    - waiting for element to be visible, enabled and stable
+
+2025-10-12 02:08:41,005 - INFO - [RichardXieSong] 浏览器初始化成功
+2025-10-12 02:09:18,193 - ERROR - [RichardXieSong] 检查失败: ElementHandle.click: Timeout 30000ms exceeded.
+Call log:
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <p>…</p> from <div class="semi-portal">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <p>…</p> from <div class="semi-portal">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    55 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <p>…</p> from <div class="semi-portal">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2025-10-12 02:09:20,370 - INFO - [rrxsJP] 浏览器初始化成功
+2025-10-12 02:09:56,438 - ERROR - [rrxsJP] 检查失败: ElementHandle.click: Timeout 30000ms exceeded.
+Call log:
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <p>…</p> from <div class="semi-portal">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <p>…</p> from <div class="semi-portal">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    57 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <p>…</p> from <div class="semi-portal">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2025-10-12 02:09:56,853 - INFO - [95m
+💰 总余额: $0.00[0m
+2025-10-12 02:09:56,853 - INFO - [95m✅ 成功检查: 0/3 个账号[0m

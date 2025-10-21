@@ -1,0 +1,150 @@
+/* Obsidian Markdown 表格优化 - 更新版：通用 + 执行表格列宽支持 */
+/* 原有基础样式保留，并扩展列宽、移动端等 */
+
+.markdown-preview-view table {
+    width: 100%;
+    max-width: 100vw;
+    table-layout: fixed; /* 固定布局，确保列宽严格遵守（原有） */
+    border-collapse: collapse;
+    overflow-x: auto; /* 水平滚动，如果表格太宽 */
+    word-break: break-all; /* 长文本换行（原有） */
+    font-size: 12px; /* 字体大小（原有） */
+    white-space: nowrap; /* 防止短列换行 */
+}
+
+.markdown-preview-view table th,
+.markdown-preview-view table td {
+    min-width: 100px; /* 最小宽度（原有） */
+    border: 1px solid #ddd; /* 清晰边框 */
+    padding: 8px 4px; /* 紧凑内边距 */
+    text-align: left; /* 所有列左对齐 */
+    vertical-align: top; /* 顶部对齐，便于长文本 */
+    word-wrap: break-word; /* 长文本自动换行 */
+    overflow-wrap: break-word;
+}
+
+/* 列宽分配：总 100%，根据内容重要性调整（新增：针对 14-15 列执行表格） */
+/* 如果你的表格列数不同，调整 nth-child 序号 */
+.markdown-preview-view table th:nth-child(1), /* 序号 */
+.markdown-preview-view table td:nth-child(1) {
+    width: 3%; /* 窄，序号只需数字 */
+    font-weight: bold;
+}
+
+.markdown-preview-view table th:nth-child(2), /* 日期 */
+.markdown-preview-view table td:nth-child(2) {
+    width: 8%; /* 稍宽，日期格式固定 */
+    font-family: monospace; /* 等宽字体，便于日期对齐 */
+}
+
+.markdown-preview-view table th:nth-child(3), /* 大类事项 */
+.markdown-preview-view table td:nth-child(3) {
+    width: 8%;
+}
+
+.markdown-preview-view table th:nth-child(4), /* 二类事项 */
+.markdown-preview-view table td:nth-child(4) {
+    width: 8%;
+}
+
+.markdown-preview-view table th:nth-child(5), /* 具体行动 */
+.markdown-preview-view table td:nth-child(5) {
+    width: 22%; /* 宽，行动描述较长（含链接） */
+}
+
+.markdown-preview-view table th:nth-child(6), /* KPI */
+.markdown-preview-view table td:nth-child(6) {
+    width: 6%; /* 窄，KPI 简短 */
+    background-color: #f9f9f9; /* 浅灰背景，突出指标 */
+}
+
+.markdown-preview-view table th:nth-child(7), /* 主要工具 */
+.markdown-preview-view table td:nth-child(7) {
+    width: 12%;
+}
+
+.markdown-preview-view table th:nth-child(8), /* 备选工具 */
+.markdown-preview-view table td:nth-child(8) {
+    width: 12%;
+}
+
+.markdown-preview-view table th:nth-child(9), /* 实施细则 */
+.markdown-preview-view table td:nth-child(9) {
+    width: 15%; /* 宽，细则可能有链接 */
+}
+
+.markdown-preview-view table th:nth-child(10), /* 开始日期 */
+.markdown-preview-view table td:nth-child(10) {
+    width: 8%;
+    font-family: monospace;
+}
+
+.markdown-preview-view table th:nth-child(11), /* 结束日期 */
+.markdown-preview-view table td:nth-child(11) {
+    width: 8%;
+    font-family: monospace;
+}
+
+.markdown-preview-view table th:nth-child(12), /* 费用 */
+.markdown-preview-view table td:nth-child(12) {
+    width: 5%; /* 窄，数字为主 */
+    text-align: right; /* 右对齐数字 */
+    font-weight: bold;
+}
+
+.markdown-preview-view table th:nth-child(13), /* 执行要点 */
+.markdown-preview-view table td:nth-child(13) {
+    width: 12%; /* 中等，要点简要 */
+}
+
+.markdown-preview-view table th:nth-child(14), /* 前置条件 */
+.markdown-preview-view table td:nth-child(14) {
+    width: 5%;
+}
+
+.markdown-preview-view table th:nth-child(15), /* 状态 - 如果有第15列 */
+.markdown-preview-view table td:nth-child(15) {
+    width: 6%; /* 窄，复选框或标记 */
+    text-align: center;
+}
+
+/* 状态列特殊样式：支持复选框（如 [ ] 或 [x]）（新增） */
+.markdown-preview-view table td:nth-child(15) {
+    font-family: monospace;
+    color: #666;
+}
+
+/* 如果状态列有 [x]，变绿色（需 Obsidian 支持 :has() 或手动） */
+.markdown-preview-view table td:has([x]) { /* 注意：Obsidian 可能需插件支持 :has() */
+    color: #28a745 !important; /* 绿色表示完成 */
+    font-weight: bold;
+}
+
+/* 奇偶行背景交替，提高可读性（新增） */
+.markdown-preview-view table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.markdown-preview-view table tr:hover {
+    background-color: #e9ecef; /* 悬停高亮 */
+}
+
+/* 移动端优化：小屏幕下缩小字体并增加滚动（新增） */
+@media (max-width: 768px) {
+    .markdown-preview-view table {
+        font-size: 10px; /* 更小字体 */
+        overflow-x: scroll; /* 强制水平滚动 */
+    }
+    
+    .markdown-preview-view table th,
+    .markdown-preview-view table td {
+        padding: 4px 2px; /* 更紧凑 */
+        min-width: 60px; /* 移动端最小宽度调整 */
+    }
+    
+    /* 移动端可选隐藏次要列（如备选工具） */
+    .markdown-preview-view table th:nth-child(8),
+    .markdown-preview-view table td:nth-child(8) {
+        display: none;
+    }
+}

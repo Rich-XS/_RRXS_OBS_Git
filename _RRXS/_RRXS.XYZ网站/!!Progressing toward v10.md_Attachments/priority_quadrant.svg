@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <style>
+      .bg { fill: #0f172a; }
+      .quadA { fill: #FF6B6B; opacity: 0.95; }
+      .quadB { fill: #4D9DE0; opacity: 0.95; }
+      .quadC { fill: #FFD166; opacity: 0.95; }
+      .quadD { fill: #9AE6B4; opacity: 0.95; }
+      .label { font-family: 'Segoe UI', Roboto, Noto Sans SC, sans-serif; fill: #071133; font-weight:700; }
+      .item { font-family: 'Segoe UI', Roboto, Noto Sans SC, sans-serif; fill: #071133; font-size:14px; }
+      .title { font-family: 'Segoe UI', Roboto, Noto Sans SC, sans-serif; fill: #ffffff; font-size:20px; font-weight:700; }
+      .box { stroke: rgba(255,255,255,0.08); stroke-width:2; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1000" height="700" rx="8"/>
+
+  <!-- Quadrants -->
+  <g transform="translate(40,60)">
+    <rect class="quadA box" x="0" y="0" width="460" height="280" rx="8"/>
+    <rect class="quadB box" x="480" y="0" width="460" height="280" rx="8"/>
+    <rect class="quadC box" x="0" y="320" width="460" height="280" rx="8"/>
+    <rect class="quadD box" x="480" y="320" width="460" height="280" rx="8"/>
+
+    <!-- Labels -->
+    <text class="label" x="18" y="28">A: 重要且紧急</text>
+    <text class="label" x="498" y="28">B: 重要但不紧急</text>
+    <text class="label" x="18" y="348">C: 不重要但紧急</text>
+    <text class="label" x="498" y="348">D: 不重要且不紧急</text>
+
+    <!-- Items A -->
+    <text class="item" x="18" y="60">• T-V1 atomicWrite (原子写入)</text>
+    <text class="item" x="18" y="84">• T-V2 lock.ps1 (文件锁)</text>
+    <text class="item" x="18" y="108">• 紧急修复/Hotfix</text>
+
+    <!-- Items B -->
+    <text class="item" x="498" y="60">• T-V6 ContextDatabase (上下文DB)</text>
+    <text class="item" x="498" y="84">• T-V7 summaryEngine (摘要引擎)</text>
+    <text class="item" x="498" y="108">• 长期优化、模型退化策略</text>
+
+    <!-- Items C -->
+    <text class="item" x="18" y="380">• T-V8 pre-commit hook (可选启用)</text>
+    <text class="item" x="18" y="404">• Backup integration 确认</text>
+
+    <!-- Items D -->
+    <text class="item" x="498" y="380">• T-V9 可视化原型/UI 美化</text>
+    <text class="item" x="498" y="404">• 小工具/样式微调</text>
+
+    <!-- Footer / Title -->
+    <rect x="0" y="620" width="940" height="56" rx="6" fill="rgba(255,255,255,0.04)" />
+    <text class="title" x="12" y="660">优先级四象限（并行任务视图） — RRXS 项目</text>
+  </g>
+</svg>

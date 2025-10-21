@@ -1,0 +1,224 @@
+/* Obsidian 表格样式优化 - 更新版：序号/费用/状态减宽，具体行动增宽 */
+.markdown-preview-view table,
+.markdown-rendered table {
+  table-layout: fixed; /* 固定布局，确保列宽一致 */
+  width: 100%;
+  min-width: 800px; /* 最小宽度，防止桌面压缩 */
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 0.9em; /* 略微缩小字体，提高紧凑度 */
+  overflow-x: auto; /* 小屏幕添加水平滚动 */
+  white-space: normal; /* 允许换行，但优先宽列 */
+}
+
+/* 通用表格单元格样式 */
+.markdown-preview-view th,
+.markdown-preview-view td,
+.markdown-rendered th,
+.markdown-rendered td {
+  border: 1px solid var(--background-modifier-border); /* 使用Obsidian主题边框 */
+  padding: 0.5em 0.3em; /* 紧凑内边距 */
+  vertical-align: top;
+  text-align: left;
+  word-wrap: break-word; /* 长文本自动换行 */
+  overflow-wrap: break-word;
+  hyphens: auto; /* 自动断词，提升长文本显示 */
+  max-width: 0; /* 配合fixed布局，防止溢出 */
+}
+
+/* 交替行背景，提升可读性 */
+.markdown-preview-view tr:nth-child(even),
+.markdown-rendered tr:nth-child(even) {
+  background-color: var(--background-secondary); /* 浅灰背景 */
+}
+
+/* 表头样式：加粗、背景色 */
+.markdown-preview-view th,
+.markdown-rendered th {
+  background-color: var(--background-primary-alt); /* 浅色背景 */
+  font-weight: bold;
+  position: sticky;
+  top: 0; /* 表头固定在顶部（如果表格滚动） */
+  z-index: 10;
+}
+
+/* 列宽分配 - 更新：序号/费用/状态减宽，具体行动增宽（总100%） */
+.markdown-preview-view table th:nth-child(1),  /* 序号 - 减到3% */
+.markdown-preview-view table td:nth-child(1) {
+  width: 3% !important;
+  text-align: center; /* 序号居中 */
+}
+
+.markdown-preview-view table th:nth-child(2),  /* 日期 */
+.markdown-preview-view table td:nth-child(2) {
+  width: 6%;
+  text-align: center; /* 日期居中 */
+}
+
+.markdown-preview-view table th:nth-child(3),  /* 大类事项 */
+.markdown-preview-view table td:nth-child(3) {
+  width: 8%;
+}
+
+.markdown-preview-view table th:nth-child(4),  /* 二类事项 */
+.markdown-preview-view table td:nth-child(4) {
+  width: 8%;
+}
+
+.markdown-preview-view table th:nth-child(5),  /* 具体行动 - 增到25%，min-width防压缩 */
+.markdown-preview-view table td:nth-child(5) {
+  width: 25% !important;
+  min-width: 200px; /* 最小200px，确保长描述不挤 */
+}
+
+.markdown-preview-view table th:nth-child(6),  /* KPI */
+.markdown-preview-view table td:nth-child(6) {
+  width: 7%;
+}
+
+.markdown-preview-view table th:nth-child(7),  /* 主要工具 */
+.markdown-preview-view table td:nth-child(7) {
+  width: 9%;
+}
+
+.markdown-preview-view table th:nth-child(8),  /* 国内备选/国际备选 */
+.markdown-preview-view table td:nth-child(8) {
+  width: 9%;
+}
+
+.markdown-preview-view table th:nth-child(9),  /* 实施细则 - 减到12% */
+.markdown-preview-view table td:nth-child(9) {
+  width: 12% !important;
+  min-width: 120px;
+}
+
+.markdown-preview-view table th:nth-child(10), /* 开始日期 */
+.markdown-preview-view table td:nth-child(10) {
+  width: 5%;
+  text-align: center;
+}
+
+.markdown-preview-view table th:nth-child(11), /* 结束日期 */
+.markdown-preview-view table td:nth-child(11) {
+  width: 5%;
+  text-align: center;
+}
+
+.markdown-preview-view table th:nth-child(12), /* 费用 - 减到3% */
+.markdown-preview-view table td:nth-child(12) {
+  width: 3% !important;
+  text-align: center; /* 费用居中 */
+  font-weight: bold; /* 突出费用 */
+}
+
+.markdown-preview-view table th:nth-child(13), /* 执行要点 - 增到10% */
+.markdown-preview-view table td:nth-child(13) {
+  width: 10%;
+}
+
+.markdown-preview-view table th:nth-child(14), /* 前置条件 */
+.markdown-preview-view table td:nth-child(14) {
+  width: 6%;
+}
+
+.markdown-preview-view table th:nth-child(15), /* 状态 - 减到4% */
+.markdown-preview-view table td:nth-child(15) {
+  width: 4% !important;
+  text-align: center; /* 状态居中 */
+  font-weight: bold;
+  color: var(--text-accent); /* 突出状态 */
+  background-color: var(--background-secondary-alt); /* 浅背景突出 */
+}
+
+/* 响应式：小屏幕隐藏非核心列（<768px，如手机），具体行动更宽 */
+@media screen and (max-width: 768px) {
+  .markdown-preview-view table,
+  .markdown-rendered table {
+    font-size: 0.8em; /* 进一步缩小字体 */
+    display: block;
+    overflow-x: auto; /* 强制水平滚动 */
+    min-width: 600px; /* 移动最小宽 */
+  }
+  
+  /* 隐藏备选、实施细则、前置条件等非核心列 */
+  .markdown-preview-view table th:nth-child(8),
+  .markdown-preview-view table td:nth-child(8), /* 备选列 */
+  .markdown-preview-view table th:nth-child(9),
+  .markdown-preview-view table td:nth-child(9), /* 实施细则 */
+  .markdown-preview-view table th:nth-child(14),
+  .markdown-preview-view table td:nth-child(14) { /* 前置条件 */
+    display: none;
+  }
+  
+  /* 调整宽列：具体行动到40%，执行要点到15% */
+  .markdown-preview-view table th:nth-child(5),
+  .markdown-preview-view table td:nth-child(5) { /* 具体行动 */
+    width: 40% !important;
+    min-width: 150px;
+  }
+  
+  .markdown-preview-view table th:nth-child(13),
+  .markdown-preview-view table td:nth-child(13) { /* 执行要点 */
+    width: 15%;
+  }
+  
+  /* 窄列进一步压缩 */
+  .markdown-preview-view table th:nth-child(1),
+  .markdown-preview-view table td:nth-child(1) { /* 序号 */
+    width: 2% !important;
+  }
+  
+  .markdown-preview-view table th:nth-child(12),
+  .markdown-preview-view table td:nth-child(12) { /* 费用 */
+    width: 2% !important;
+  }
+  
+  .markdown-preview-view table th:nth-child(15),
+  .markdown-preview-view table td:nth-child(15) { /* 状态 */
+    width: 3% !important;
+  }
+}
+
+/* 特定主题兼容：如果使用Minimal主题或其他，调整变量 */
+:root {
+  --table-border-color: var(--background-modifier-border);
+}
+
+/* 悬停效果：行高亮 */
+.markdown-preview-view tr:hover,
+.markdown-rendered tr:hover {
+  background-color: var(--background-modifier-hover) !important;
+}
+
+/* 长文本列额外优化：具体行动和实施细则允许多行显示 */
+.markdown-preview-view table td:nth-child(5),
+.markdown-preview-view table td:nth-child(9) {
+  white-space: pre-wrap; /* 保留换行，允许多行 */
+  line-height: 1.4; /* 行高优化可读性 */
+}
+
+
+/* ========================================================= */
+/* 2. 全宽模式：移除笔记最大宽度限制 (让内容填满整个窗口) */
+/* ========================================================= */
+
+/* 核心内容容器 (阅读模式和编辑模式) */
+.markdown-source-view.is-readable-line-width .cm-content,
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+    max-width: 100% !important; /* 关键：移除最大宽度限制 */
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* 确保表格、图片等元素在全宽下也能正确拉伸 */
+.markdown-preview-view table,
+.markdown-preview-view img {
+    max-width: 100% !important;
+}
+
+/* 某些情况下，这个容器可能也有限制，需要一并移除 */
+.view-content .markdown-source-view,
+.view-content .markdown-preview-view {
+    max-width: 100% !important;
+}

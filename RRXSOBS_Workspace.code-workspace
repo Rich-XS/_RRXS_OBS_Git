@@ -1,0 +1,35 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "_RRXS"
+		},
+		{
+			"path": "team"
+		},
+		{
+			"path": "Tools"
+		},
+		{
+			"path": "Z_Templates"
+		}
+	],
+	"settings": {
+		"editor.fontSize": 14,
+		"editor.wordWrap": "on",
+		"files.autoSave": "afterDelay",
+		"workbench.colorTheme": "Default Dark Modern",
+		"workbench.startupEditor": "none",
+		"python.defaultInterpreterPath": "${workspaceFolder}\\_RRXS\\venv\\Scripts\\python.exe"
+	},
+	"extensions": {
+		"recommendations": [
+			"yzhang.markdown-all-in-one",
+			"shd101wyy.markdown-preview-enhanced",
+			"davidanson.vscode-markdownlint",
+			"ms-python.python"
+		]
+	}
+}

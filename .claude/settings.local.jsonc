@@ -1,0 +1,21 @@
+{
+    // --- 权限设置（保留您现有的） ---
+    "permissions": {
+        "allow": [
+            "Bash(mkdir:*)"
+        ],
+        "deny": [],
+        "ask": []
+    },
+
+    // --- 仅 LongContext 覆盖：保护 Obsidian 库的长文本处理 ---
+    // 强制使用 LongContext 策略，确保长笔记归档稳定且成本受控。
+    "claudeCode.modelConfiguration": {
+        // 主选模型 (w=5): 免费超长上下文模型
+        "longContext": "openrouter,google/gemini-2.0-flash-exp:free",
+        // 长上下文触发阈值：UI中设置的 64000
+        "longContextThreshold": 64000, 
+        // 备选模型 (w=5 保险): 低成本、高稳定性的 Claude 3 Haiku
+        "longContextFallback": "openrouter,anthropic/claude-3-haiku"
+    }
+}

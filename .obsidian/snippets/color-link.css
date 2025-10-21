@@ -1,0 +1,49 @@
+/* 阅读模式下的链接颜色 */
+.markdown-rendered a.internal-link[href*="千锤百问.1_报告_自媒体百问：百万被动收入之路.pdf"] {
+    color: #EE82EE; /* 淡紫色 (兰花紫) */
+}
+
+.markdown-rendered a.internal-link[href*="千锤百问.2_报告_商业可行度行动规划书.pdf"] {
+    color: #8B008B; /* 紫色 (深紫) */
+}
+
+.markdown-rendered a.internal-link[href*="千锤百问.2a_百问完整回答及辩论.md"] {
+    color: #90EE90; /* 浅绿色 (淡绿) */
+}
+
+.markdown-rendered a.internal-link[href*="千锤百问.3_报告_数字商业化百问分析与建议_.pdf"] {
+    color: #009900; /* 深绿 (鲜绿) */
+}
+
+.markdown-rendered a.internal-link[href*="千锤百问.4_自媒体创业&IP包.md"] {
+    color: #00BFFF; /* 浅蓝 (深天蓝) */
+}
+
+.markdown-rendered a.internal-link[href*="千锤百问.5_报告_IP打造百日千粉执行指南.pdf"] {
+    color: #0000FF; /* 海军蓝 (纯蓝) */
+}
+
+/* 编辑模式下的链接颜色 (可选，如果需要) */
+.cm-s-obsidian span.cm-link.cm-link-internal[href*="千锤百问.1_报告_自媒体百问：百万被动收入之路.pdf"] {
+    color: #EE82EE; /* 淡紫色 (兰花紫) */
+}
+
+.cm-s-obsidian span.cm-link.cm-link-internal[href*="千锤百问.2_报告_商业可行度行动规划书.pdf"] {
+    color: #8B008B; /* 紫色 (深紫) */
+}
+
+.cm-s-obsidian span.cm-link.cm-link-internal[href*="千锤百问.2a_百问完整回答及辩论.md"] {
+    color: #90EE90; /* 浅绿色 (淡绿) */
+}
+
+.cm-s-obsidian span.cm-link.cm-link-internal[href*="千锤百问.3_报告_数字商业化百问分析与建议_.pdf"] {
+    color: #009900; /* 深绿 (鲜绿) */
+}
+
+.cm-s-obsidian span.cm-link.cm-link-internal[href*="千锤百问.4_自媒体创业&IP包.md"] {
+    color: #00BFFF; /* 浅蓝 (深天蓝) */
+}
+
+.cm-s-obsidian span.cm-link.cm-link-internal[href*="千锤百问.5_报告_IP打造百日千粉执行指南.pdf"] {
+    color: #0000FF; /* 海军蓝 (纯蓝) */
+}

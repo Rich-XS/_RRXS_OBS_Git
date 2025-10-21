@@ -1,0 +1,3 @@
+2025-10-15T03:24:44.968Z INFO VaultDataManager: Initializing with vault event listeners
+2025-10-15T03:24:45.100Z ERROR No model found for: copilot-plus-flash|copilot-plus\nError: No model found for: copilot-plus-flash|copilot-plus\n    at Xd.createModelInstance (plugin:copilot:718:38224)\n    at Xd.setChatModel (plugin:copilot:718:37880)\n    at lte.createChainWithNewModel (plugin:copilot:1544:2213)\n    at lte.initialize (plugin:copilot:1544:780)\n    at new lte (plugin:copilot:1544:630)\n    at new t (plugin:copilot:1549:1069)\n    at t.getInstance (plugin:copilot:1549:2062)\n    at _Te.onload (plugin:copilot:1914:14558)
+2025-10-15T03:24:45.101Z INFO Setting model to copilot-plus-flash|copilot-plus

@@ -1,0 +1,49 @@
+{
+  "nodes": [
+    {
+      "id": "brainmap",
+      "type": "file",
+      "x": 0,
+      "y": 0,
+      "width": 200,
+      "height": 100,
+      "file": "千锤百问.汇总v3_百日千粉行动计划脑图.md"
+    },
+    {
+      "id": "gantt",
+      "type": "text",
+      "x": 250,
+      "y": 0,
+      "width": 300,
+      "height": 200,
+      "text": "```mermaid\ngantt\n    title 行动计划甘特图\n    dateFormat  YYYY-MM-DD\n    axisFormat %m-%d\n    todayMarker off\n\n    section 月1-基础搭建\n    访谈启动 :a1, 2024-01-01, 7d\n    公域试水 :a2, after a1, 7d\n    工具配置 :a3, after a2, 7d\n    内容储备 :a4, after a3, 9d\n\n    section 月2-内容加速\n    公众号输出 :b1, 2024-02-01, 7d\n    视频爆发 :b2, after b1, 7d\n    选题优化 :b3, after b2, 7d\n    流量测试 :b4, after b3, 9d\n\n    section 月3-社群裂变\n    产品上线 :c1, 2024-03-01, 7d\n    毕业仪式 :c2, after c1, 7d\n    裂变活动 :c3, after c2, 7d\n    KPI追踪 :c4, after c3, 9d\n```"
+    },
+    {
+      "id": "summary",
+      "type": "text",
+      "x": 0,
+      "y": 250,
+      "width": 550,
+      "height": 50,
+      "text": "拖拽节点调整：脑图链接月/周拆解，甘特图可视化时间线。链接[[百日复盘模板]]追踪进度。"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge1",
+      "fromNode": "brainmap",
+      "fromSide": "right",
+      "toNode": "gantt",
+      "toSide": "left",
+      "color": "#007acc"
+    },
+    {
+      "id": "edge2",
+      "fromNode": "gantt",
+      "fromSide": "bottom",
+      "toNode": "summary",
+      "toSide": "top",
+      "color": "#28a745"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+	"nodes":[
+		{"id":"5d1aceae87209251","x":-110,"y":-400,"width":240,"height":100,"type":"text","text":"功能价值\n情绪价值\n社会/身份价值"},
+		{"id":"c6c043f4534b33e9","x":-560,"y":-200,"width":250,"height":60,"type":"text","text":"战略定位"},
+		{"id":"3ba26bf5db08b76d","x":-420,"y":260,"width":250,"height":60,"type":"text","text":"多'魔'汰"},
+		{"id":"d3cfee8f5cd062ae","x":130,"y":320,"width":250,"height":60,"type":"text","text":"First Thing First"},
+		{"id":"55e7b71339fcd671","x":-200,"y":0,"width":250,"height":60,"type":"text","text":"变现"}
+	],
+	"edges":[]
+}

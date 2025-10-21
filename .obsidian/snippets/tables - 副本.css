@@ -1,0 +1,105 @@
+/*
+  ==============================================================
+  Obsidian 表格样式精细优化 (基于 2025-09-22 截图内容)
+  ==============================================================
+*/
+
+/* --- 1. 全局表格设置 --- */
+/* 适配阅读视图和实时预览模式 */
+.markdown-preview-view table,
+.cm-table-widget table {
+  table-layout: fixed;   /* 使用 'fixed' 布局，让宽度设置更精确、稳定 */
+  width: 100%;           /* 表格总宽度占满可用空间 */
+  word-break: break-word;/* 允许在单词内换行，防止长文本撑破单元格 */
+  font-size: 14px;       /* 稍微缩小字体，以便在有限空间内显示更多内容 */
+}
+
+/* 单元格垂直居中对齐，提升观感 */
+.markdown-preview-view table th, .markdown-preview-view table td,
+.cm-table-widget table th, .cm-table-widget table td {
+  vertical-align: middle;
+}
+
+/* --- 2. 各列宽度精确控制 (总和 100%) --- */
+
+/* 第1列：序号 (3%) - 极窄 */
+.markdown-preview-view table th:nth-of-type(1), .markdown-preview-view table td:nth-of-type(1),
+.cm-table-widget table th:nth-of-type(1), .cm-table-widget table td:nth-of-type(1) {
+  width: 3%;
+}
+
+/* 第2列：时间 (5%) - 窄 */
+.markdown-preview-view table th:nth-of-type(2), .markdown-preview-view table td:nth-of-type(2),
+.cm-table-widget table th:nth-of-type(2), .cm-table-widget table td:nth-of-type(2) {
+  width: 3%;
+}
+
+/* 第3列：大类事项 (6%) */
+.markdown-preview-view table th:nth-of-type(3), .markdown-preview-view table td:nth-of-type(3),
+.cm-table-widget table th:nth-of-type(3), .cm-table-widget table td:nth-of-type(3) {
+  width: 6%;
+}
+
+/* 第4列：二类事项 (3%) */
+.markdown-preview-view table th:nth-of-type(4), .markdown-preview-view table td:nth-of-type(4),
+.cm-table-widget table th:nth-of-type(4), .cm-table-widget table td:nth-of-type(4) {
+  width: 3%;
+}
+
+/* 第5列：具体行动 (13%) - 宽 */
+.markdown-preview-view table th:nth-of-type(5), .markdown-preview-view table td:nth-of-type(5),
+.cm-table-widget table th:nth-of-type(5), .cm-table-widget table td:nth-of-type(5) {
+  width: 10%;
+}
+
+/* 第6列：KPI (6%) */
+.markdown-preview-view table th:nth-of-type(6), .markdown-preview-view table td:nth-of-type(6),
+.cm-table-widget table th:nth-of-type(6), .cm-table-widget table td:nth-of-type(6) {
+  width: 8%;
+}
+
+/* 第7列：主要工具 (11%) - 较宽 */
+.markdown-preview-view table th:nth-of-type(7), .markdown-preview-view table td:nth-of-type(7),
+.cm-table-widget table th:nth-of-type(7), .cm-table-widget table td:nth-of-type(7) {
+  width: 15%;
+}
+
+/* 第8列：备选工具 (10%) - 较宽 */
+.markdown-preview-view table th:nth-of-type(8), .markdown-preview-view table td:nth-of-type(8),
+.cm-table-widget table th:nth-of-type(8), .cm-table-widget table td:nth-of-type(8) {
+  width: 10%;
+}
+
+/* 第9列：实施细则 (13%) - 宽 */
+.markdown-preview-view table th:nth-of-type(9), .markdown-preview-view table td:nth-of-type(9),
+.cm-table-widget table th:nth-of-type(9), .cm-table-widget table td:nth-of-type(9) {
+  width: 14%;
+}
+
+/* 第10列：开始日期 (6%) */
+.markdown-preview-view table th:nth-of-type(10), .markdown-preview-view table td:nth-of-type(10),
+.cm-table-widget table th:nth-of-type(10), .cm-table-widget table td:nth-of-type(10) {
+  width: 6%;
+}
+
+/* 第11列：结束日期 (6%) */
+.markdown-preview-view table th:nth-of-type(11), .markdown-preview-view table td:nth-of-type(11),
+.cm-table-widget table th:nth-of-type(11), .cm-table-widget table td:nth-of-type(11) {
+  width: 6%;
+}
+
+/* 第12列：费用 (5%) - 极窄 */
+.markdown-preview-view table th:nth-of-type(12), .markdown-preview-view table td:nth-of-type(12),
+.cm-table-widget table th:nth-of-type(12), .cm-table-widget table td:nth-of-type(12) {
+  width: 3%;
+}
+
+/* 第13列：执行要点 (11%) - 较宽 */
+.markdown-preview-view table th:nth-of-type(13), .markdown-preview-view table td:nth-of-type(13),
+.cm-table-widget table th:nth-of-type(13), .cm-table-widget table td:nth-of-type(13) {
+  width: 13%;
+}
+
+/* 第14列：前置条件 (未在截图中显示，保持默认) */
+/* 如果此列内容也很少，可以减小其宽度，并将空间分配给其他列 */
+/* 当前未分配宽度，它将自动占用剩余空间 */

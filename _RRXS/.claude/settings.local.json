@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/OneDrive_RRXS/OneDrive/_AIGPT/VSCode/100W/**)",
+      "Bash(dir:*)",
+      "Bash(cp:*)",
+      "Bash(if not exist .env copy .env.example .env)",
+      "Bash(ls:*)",
+      "Bash(powershell:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

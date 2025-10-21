@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "RRXS Chat History Saver",
+  "version": "1.0.0",
+  "description": "自动保存AI聊天记录到本地",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "downloads"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://chat.openai.com/*",
+        "*://claude.ai/*",
+        "*://gemini.google.com/*",
+        "*://kimi.moonshot.cn/*",
+        "*://tongyi.aliyun.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "聊天记录保存器"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

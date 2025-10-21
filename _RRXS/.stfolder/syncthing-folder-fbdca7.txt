@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: RRXS_SyncThing
+created: 2025-09-15T21:30:37+08:00

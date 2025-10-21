@@ -1,0 +1,36 @@
+# AnyRouter 自动刷新脚本 Crontab 配置
+# 请使用命令: crontab -e 并将以下内容粘贴进去
+
+# ========================================
+# 环境变量设置
+# ========================================
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# ========================================
+# 1. 每日自动刷新任务
+# ========================================
+# 每天 UTC 00:00 (北京时间 08:00) 运行 AnyRouter 刷新脚本
+# 日志输出到 /var/log/anyrouter_cron.log
+0 0 * * * docker run --rm anyrouter-refresher >> /var/log/anyrouter_cron.log 2>&1
+
+# ========================================
+# 2. 每月系统维护任务
+# ========================================
+# 每月 1 日 01:00 (UTC) 清理 Docker 系统数据
+# 清理所有未使用的镜像、容器、网络和构建缓存
+0 1 1 * * docker system prune -a -f >> /var/log/docker_cleanup.log 2>&1
+
+# ========================================
+# 补充说明
+# ========================================
+# - 如需修改刷新时间，请调整第一个任务的时间格式（分 时 日 月 周）
+# - 日志文件位置：
+#   - 刷新日志: /var/log/anyrouter_cron.log
+#   - 清理日志: /var/log/docker_cleanup.log
+# - 查看日志命令:
+#   - tail -f /var/log/anyrouter_cron.log
+#   - tail -f /var/log/docker_cleanup.log
+# - 手动测试命令:
+#   - docker run --rm anyrouter-refresher
+#   - docker system prune -a -f

@@ -1,0 +1,1 @@
+给出48小时内可执行的 POC 技术清单（OpenAI/Anthropic 调用示例 + Obsidian → webhook → 发布 到公众号的小脚本），或
